@@ -1,0 +1,161 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #eee;
+}
+
+/* navbar */
+
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/img1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar .active {
+  background-color: #f44336;
+  border-radius: 7px;
+  box-shadow: 2px 5px 20px #111;
+  transition: all .3s ease;
+}
+
+.sidebar .active:hover {
+  background-color: #f66436;
+  transform: translateY(-1px);
+}
+
+.sidebar-link {
+  transition: all .3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: #444;
+  border-radius: 7px;
+}
+
+.icon-notify {
+  position: relative;
+}
+
+.icon-notify-link::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #f44336;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #999;
+  transition: all .4s;
+}
+
+.search-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #dc3545;
+}
+
+.search-btn {
+  border-radius: 50%;
+  padding: 10px 16px;
+  transition: all .4s;
+}
+
+.search-btn:hover {
+  background-color: #eee;
+  transform: translateY(-1px);
+}
+
+.top-nav-ic {
+  transition: all .4s;
+}
+
+.top-nav-ic:hover {
+  transform: translateY(-1.5px)
+}
+
+@media (min-width: 768px) {
+.log-btn {
+  border-radius: 20%;
+  padding: 2px 2px;
+  transition: all .4s ease;
+}
+
+
+.log-btn:hover {
+  background-color: #eee;
+  transform: translateY(-1px);
+}
+}
+
+@media (max-width: 766px) {
+
+  .sg-icon {
+    border-radius: 5px;
+    padding: 5px 5px;
+    transition: all .4s ease !important;
+  }
+  
+  
+  .sg-icon:hover {
+    background-color: rgb(162, 164, 177)!important;
+    transform: translateY(-1px)!important;
+  }
+}
+
+/* When collapse there is no fixed-top start*/
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+  .top-navbar {
+    position: static;
+  }
+}
+/* When collapse there is no fixed-top end*/
+
+/* 4 cards */
+.card-trans {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-trans:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+
+.task-bar {
+  border-left: 3px solid rgb(248, 95, 57);
+}
+
+@media (max-width: 1200px) {
+  .table-flex {
+    display: block!important;
+  }
+  .card-flex {
+    display: block!important;
+  }
+  .footer-flex {
+    display: block!important;
+  }
+}
+
+.btn-warning {
+  background-color: rgb(170, 240, 57)!important;
+  border: none;
+}
